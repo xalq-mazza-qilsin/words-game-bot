@@ -35,4 +35,4 @@ async def bot_start(message: types.Message):
         await bot.send_message(chat_id=ADMINS[0], text=msg, parse_mode=types.ParseMode.MARKDOWN_V2)
     else:
         await bot.send_message(chat_id=ADMINS[0], text=f"[{make_title(full_name)}](tg://user?id={message.from_user.id}) bazaga oldin qo'shilgan", disable_web_page_preview=True, parse_mode=types.ParseMode.MARKDOWN_V2)
-    await message.answer(f"Xush kelibsiz\! {make_title(full_name)}\nSo'z o'yiniga xush kelibsiz\.\n\nO'yinni qanday ko'rinishda o'ynashni ma'qul ko'rasiz?", parse_mode=types.ParseMode.MARKDOWN_V2, reply_markup=game_types_markup)
+    await message.answer(f"Salom\! {make_title(full_name)}\nSo'z o'yiniga xush kelibsiz\.\n\nO'yinni qanday ko'rinishda o'ynashni ma'qul ko'rasiz?", parse_mode=types.ParseMode.MARKDOWN_V2, reply_markup=game_types_markup)

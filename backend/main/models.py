@@ -62,6 +62,7 @@ class Game(models.Model):
 
     class Meta:
         db_table = 'games'
+        unique_together = ('user', 'word')
 
 
 class GuessedLetter(models.Model):
